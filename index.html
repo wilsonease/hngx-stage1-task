@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+    <title>Student page</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <section class="profile">
+            <div class="profile-picture"><img src="./img/profile.jfif" alt="Wilson Ease" data-tetid="slackDisplayImage"></div>
+            <div>
+                <ul class="profile-details">
+                    <li class="username" data-testid="slackUserName">Wilson Ease </li>
+                    <li data-testid="myTrack">Frontend</li>
+                    <br>
+                    <li>About</li>
+                    <li>Working Remotely</li>
+                </ul>
+            </div>
+        </section>
+        <section class="realtime-info">
+            <div class="current-time" data-testid="currentUTCTime"></div>
+            <div class="day-of-week" data-testid="currentDayOfTheWeek"></div>
+        </section>
+
+        <section class="giturl">
+            <a href="https://github.com/wilsonease/hngx-stage1-task" target="_blank" data-testid="githubURL">View source code</a>
+        </section>
+    </div>
+<script src="./index.js"></script>
+
 </body>
-</html>
